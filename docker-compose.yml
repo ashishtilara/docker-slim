@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  slim:
+    build: .
+    command: sh /opt/startup.sh
+    volumes:
+     - .:/opt/slim
+    ports:
+      - "8000:80"
+    env_file:
+      - ./docker/common.env
