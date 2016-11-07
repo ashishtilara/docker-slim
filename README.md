@@ -25,7 +25,10 @@ Run this command to run the test suite
 
 That's it! Now go build something cool.
 
+## docker commands
 
-docker build -t slim_test .
-docker run -i -p 22 -p 8000:80 -v $(pwd):/opt/slim -t slim_test
-docker-compose up
+`docker build -t slim_test .`
+
+`docker run -i -p 22 -p 8000:80 -v $(pwd):/opt/slim -t slim_test`
+
+`docker-compose up`
